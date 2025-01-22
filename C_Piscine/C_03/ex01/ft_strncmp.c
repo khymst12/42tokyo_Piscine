@@ -25,7 +25,7 @@ int	ft_strncmp(char *s1, char *s2, unsigned int n)
 	}
 	return (0);
 }
-/*
+
 #include <stdio.h>
 int	main(void)
 {
@@ -46,4 +46,3 @@ int	main(void)
 	printf("%d\n", ft_strncmp(s1, s7, 7));
 	printf("%d\n", ft_strncmp(s1, s8, 8));
 }
-*/

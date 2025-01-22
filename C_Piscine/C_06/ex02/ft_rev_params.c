@@ -1,6 +1,7 @@
-void    ft_rev_params(char *name)
+#include <unistd.h>
+
+void    ft_print_params(char *name)
 {
-   while
    while (*name)
    {
        write(1, name, 1);
