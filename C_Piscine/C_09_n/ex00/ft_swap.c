@@ -1,18 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_abs.h                                           :+:      :+:    :+:   */
+/*   ft_swap.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kyamashi <kyamashi@student.42.fr>          +#+  +:+       +#+        */
+/*   By: kyamashi <kyamashi@student.42tokyo.jp      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/28 13:59:00 by kyamashi          #+#    #+#             */
-/*   Updated: 2025/01/29 10:53:47 by kyamashi         ###   ########.fr       */
+/*   Created: 2025/01/29 13:36:54 by kyamashi          #+#    #+#             */
+/*   Updated: 2025/01/29 13:36:56 by kyamashi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_ABS_H
-# define FT_ABS_H
+void	ft_swap(int *a, int *b)
+{
+	int	tmp;
 
-# define ABS(Value) (((Value) < 0) * -(Value) + ((Value) >= 0) * (Value))
+	tmp = *a;
+	*a = *b;
+	*b = tmp;
+}
+/*
+#include <stdio.h>
 
-#endif
+int	main(void)
+{
+	int	a;
+	int	b;
+
+	a = 1;
+	b = 2;
+	ft_swap(&a, &b);
+	printf("%d, %d", a, b);
+	return (0);
+}
+*/

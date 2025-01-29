@@ -1,18 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_abs.h                                           :+:      :+:    :+:   */
+/*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kyamashi <kyamashi@student.42.fr>          +#+  +:+       +#+        */
+/*   By: kyamashi <kyamashi@student.42tokyo.jp      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/28 13:59:00 by kyamashi          #+#    #+#             */
-/*   Updated: 2025/01/29 10:53:47 by kyamashi         ###   ########.fr       */
+/*   Created: 2025/01/29 13:36:29 by kyamashi          #+#    #+#             */
+/*   Updated: 2025/01/29 13:36:31 by kyamashi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_ABS_H
-# define FT_ABS_H
+#include <unistd.h>
 
-# define ABS(Value) (((Value) < 0) * -(Value) + ((Value) >= 0) * (Value))
+void	ft_putchar(char c)
+{
+	write(1, &c, 1);
+}
+/*
+int	main(void)
+{
+	char	c;
 
-#endif
+	c = 'a';
+	ft_putchar(c);
+	return (0);
+}
+*/

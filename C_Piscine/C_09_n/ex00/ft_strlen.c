@@ -1,18 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_abs.h                                           :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kyamashi <kyamashi@student.42.fr>          +#+  +:+       +#+        */
+/*   By: kyamashi <kyamashi@student.42tokyo.jp      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/28 13:59:00 by kyamashi          #+#    #+#             */
-/*   Updated: 2025/01/29 10:53:47 by kyamashi         ###   ########.fr       */
+/*   Created: 2025/01/29 13:36:47 by kyamashi          #+#    #+#             */
+/*   Updated: 2025/01/29 13:36:49 by kyamashi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_ABS_H
-# define FT_ABS_H
+int	ft_strlen(char *str)
+{
+	int	len;
 
-# define ABS(Value) (((Value) < 0) * -(Value) + ((Value) >= 0) * (Value))
+	len = 0;
+	while (str[len])
+		len++;
+	return (len);
+}
+/*
+#include <stdio.h>
 
-#endif
+int	main(void)
+{
+	char	*str;
+
+	str = "12345678";
+	printf("%d\n", ft_strlen(str));
+	return (0);
+}
+*/
